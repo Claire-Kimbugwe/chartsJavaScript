@@ -23,7 +23,7 @@
       responsive: true
     };
 
-    // Make Donut Chart of percent of different types of Melons
+    // Make Donut Chart of percent of different packages
     let ctx_donut = $("#donutChart").get(0).getContext("2d");
 
     $.get("/python-packeges.json", function (data) {
@@ -35,7 +35,7 @@
       $('#donutLegend').html(myDonutChart.generateLegend());
     });
 
-    // Make Line Chart of Melon Sales over time
+    // Make Line Chart of languages over time (python and js)
     let ctx_line = $("#lineChart").get(0).getContext("2d");
 
     $.get("/python-times.json", function (data) {

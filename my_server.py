@@ -12,7 +12,7 @@ def index():
 
 @app.route('/python-packeges.json')
 def melon_types_data():
-    """Return data about Melon Sales."""
+    """Return data about packages popularity."""
 
     data_dict = {
                 "labels": [
@@ -40,7 +40,7 @@ def melon_types_data():
 
 @app.route('/python-times.json')
 def melon_times_data():
-    """Return time series data of Melon Sales."""
+    """Return time series data of packages popularity."""
 
     data_dict = {
         "labels": ["January", "February", "March", "April", "May", "June", "July"],
